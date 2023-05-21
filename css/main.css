@@ -1,0 +1,1047 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+.menu {
+    /* background-color: #b66f2d; */
+    background-image: url('home-1-slider-image-1.jpg');
+    font-family: "Baloo 2", cursive
+}
+
+.menu .pic-area {
+    height: 100vh;
+    padding-top: 35vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.3)), url("../img/menu-bg.jpg") center top no-repeat;
+    background-size: cover
+}
+
+.menu .pic-area h1,
+.menu .pic-area h2,
+.menu .pic-area h3 {
+    font-weight: 400
+}
+
+.menu .pic-area h1 {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+    font-size: 48px
+}
+
+.menu .pic-area h2 {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+    font-size: 36px
+}
+
+.menu .pic-area h3 {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+    font-size: 24px
+}
+
+.menu .pic-area .pic-area-text {
+    padding: 1rem;
+    background: rgba(71, 71, 71, 0.2)
+}
+
+.menu .flex {
+    /* background-color: #db8637; */
+    /* opacity: 0.8; */
+    /* background-image: url('home-1-slider-image-1.jpg'); */
+    
+    margin: 1rem auto;
+    padding: 1.5rem;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    margin-right: 180px;
+    margin-left: 180px;
+    padding-top: 120px;
+    color: #e0e0e0e6;
+}
+
+.menu .flex .box {
+    position: relative;
+    text-align: center
+}
+
+.menu .flex .box .box__btns {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    align-items: center;
+    text-align: center
+}
+
+.menu .flex .box .box__btn {
+    cursor: pointer;
+    font-family: "Baloo 2", cursive;
+    text-decoration: none;
+    outline: none;
+    padding: 0.5rem;
+    margin: 0 3rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: #b66f2d;
+    border: 1px solid #151515;
+    color: #151515;
+    opacity: 0;
+    transition: all 0.5s ease-in-out
+}
+
+.menu .flex .box .box__btn:hover {
+    background: #db8637
+}
+
+.menu .flex .box .img-container {
+    position: relative;
+    border-bottom: 5px solid #b66f2d;
+    overflow: hidden
+}
+
+.menu .flex .box .img-container img {
+    width: 100%;
+    height: 100%
+}
+
+.menu .flex .box .img-container::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #707070;
+    opacity: 0;
+    transition: all 0.5s ease-in-out
+}
+
+.menu .flex .box .img-container:hover::after {
+    top: 0;
+    opacity: 0.5
+}
+
+.menu .flex .box .img-container:hover .box__btn {
+    opacity: 1
+}
+
+
+html {
+    transition: all 0.5s ease-in-out
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 1;
+}
+.nav1{
+    /* position: fixed; */
+    width: 100%;
+    background-color: black;
+}
+.nav1 li {
+    display: inline;
+    color: white;
+    padding: 20px;
+    font-size: larger;
+    text-align: center;
+
+}
+
+.nav1 a {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.nav1 a:hover {
+    color: white;
+    text-decoration: underline;
+    /* font-style: italic; */
+}
+
+.nav li {
+    display: inline;
+    color: white;
+    padding: 20px;
+    font-size: larger;
+    text-align: center;
+
+}
+
+.nav a {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: white;
+    text-decoration: underline;
+    opacity: 1.0;
+    font-weight: 500;
+    /* font-style: italic; */
+}
+
+header .nav .menu-nav__item.active>a {
+    color: #b66f2d
+}
+
+header .cart__openBtn,
+header .cart__closeBtn {
+    cursor: pointer
+}
+
+header .cart__closeBtn {
+    position: fixed;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out
+}
+
+header .cart__closeBtn:hover {
+    color: #b66f2d
+}
+
+header .cart-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    background: rgba(112, 112, 112, 0.5);
+    z-index: 4;
+    visibility: hidden
+}
+
+header .cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    overflow: auto;
+    z-index: 5;
+    background: #151515;
+    padding: 1.5rem;
+    transition: all 0.5s ease-in-out;
+    border: 2px groove #707070;
+    transform: translateX(100%);
+    text-align: center;
+    font-family: "Baloo 2", cursive;
+    color: #e0e0e0
+}
+
+header .span-primary {
+    color: #b66f2d
+}
+
+header .transparentBcg {
+    visibility: visible
+}
+
+header .showcart {
+    transform: translateX(0)
+}
+
+header .item-display {
+    color: #151515
+}
+
+header .total {
+    font-size: 1.5rem
+}
+
+header .one1-cart-item,
+header .two2-cart-item,
+header .three3-cart-item,
+header .four4-cart-item,
+header .five5-cart-item,
+header .six6-cart-item,
+header .seven7-cart-item,
+header .eight8-cart-item,
+header .nine9-cart-item,
+header .ten10-cart-item,
+header .eleven11-cart-item,
+header .twelve12-cart-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: left;
+    color: #e0e0e0
+}
+
+header .one1-cart-item img,
+header .two2-cart-item img,
+header .three3-cart-item img,
+header .four4-cart-item img,
+header .five5-cart-item img,
+header .six6-cart-item img,
+header .seven7-cart-item img,
+header .eight8-cart-item img,
+header .nine9-cart-item img,
+header .ten10-cart-item img,
+header .eleven11-cart-item img,
+header .twelve12-cart-item img {
+    width: 125px;
+    height: 125px;
+    border-radius: 4rem;
+    padding: 0;
+    margin: 5%;
+    border: 5px solid #b66f2d
+}
+
+header .one1-cart-item h3,
+header .two2-cart-item h3,
+header .three3-cart-item h3,
+header .four4-cart-item h3,
+header .five5-cart-item h3,
+header .six6-cart-item h3,
+header .seven7-cart-item h3,
+header .eight8-cart-item h3,
+header .nine9-cart-item h3,
+header .ten10-cart-item h3,
+header .eleven11-cart-item h3,
+header .twelve12-cart-item h3 {
+    font-size: 1.25rem
+}
+
+header .one1-cart-item h4,
+header .two2-cart-item h4,
+header .three3-cart-item h4,
+header .four4-cart-item h4,
+header .five5-cart-item h4,
+header .six6-cart-item h4,
+header .seven7-cart-item h4,
+header .eight8-cart-item h4,
+header .nine9-cart-item h4,
+header .ten10-cart-item h4,
+header .eleven11-cart-item h4,
+header .twelve12-cart-item h4 {
+    font-size: 1.125rem;
+    margin: 0.25rem 0
+}
+
+header .one1-cart-item .item-amount1,
+header .one1-cart-item .item-amount2,
+header .one1-cart-item .item-amount3,
+header .one1-cart-item .item-amount4,
+header .one1-cart-item .item-amount5,
+header .one1-cart-item .item-amount6,
+header .one1-cart-item .item-amount7,
+header .one1-cart-item .item-amount8,
+header .one1-cart-item .item-amount9,
+header .one1-cart-item .item-amount10,
+header .one1-cart-item .item-amount11,
+header .one1-cart-item .item-amount12,
+header .two2-cart-item .item-amount1,
+header .two2-cart-item .item-amount2,
+header .two2-cart-item .item-amount3,
+header .two2-cart-item .item-amount4,
+header .two2-cart-item .item-amount5,
+header .two2-cart-item .item-amount6,
+header .two2-cart-item .item-amount7,
+header .two2-cart-item .item-amount8,
+header .two2-cart-item .item-amount9,
+header .two2-cart-item .item-amount10,
+header .two2-cart-item .item-amount11,
+header .two2-cart-item .item-amount12,
+header .three3-cart-item .item-amount1,
+header .three3-cart-item .item-amount2,
+header .three3-cart-item .item-amount3,
+header .three3-cart-item .item-amount4,
+header .three3-cart-item .item-amount5,
+header .three3-cart-item .item-amount6,
+header .three3-cart-item .item-amount7,
+header .three3-cart-item .item-amount8,
+header .three3-cart-item .item-amount9,
+header .three3-cart-item .item-amount10,
+header .three3-cart-item .item-amount11,
+header .three3-cart-item .item-amount12,
+header .four4-cart-item .item-amount1,
+header .four4-cart-item .item-amount2,
+header .four4-cart-item .item-amount3,
+header .four4-cart-item .item-amount4,
+header .four4-cart-item .item-amount5,
+header .four4-cart-item .item-amount6,
+header .four4-cart-item .item-amount7,
+header .four4-cart-item .item-amount8,
+header .four4-cart-item .item-amount9,
+header .four4-cart-item .item-amount10,
+header .four4-cart-item .item-amount11,
+header .four4-cart-item .item-amount12,
+header .five5-cart-item .item-amount1,
+header .five5-cart-item .item-amount2,
+header .five5-cart-item .item-amount3,
+header .five5-cart-item .item-amount4,
+header .five5-cart-item .item-amount5,
+header .five5-cart-item .item-amount6,
+header .five5-cart-item .item-amount7,
+header .five5-cart-item .item-amount8,
+header .five5-cart-item .item-amount9,
+header .five5-cart-item .item-amount10,
+header .five5-cart-item .item-amount11,
+header .five5-cart-item .item-amount12,
+header .six6-cart-item .item-amount1,
+header .six6-cart-item .item-amount2,
+header .six6-cart-item .item-amount3,
+header .six6-cart-item .item-amount4,
+header .six6-cart-item .item-amount5,
+header .six6-cart-item .item-amount6,
+header .six6-cart-item .item-amount7,
+header .six6-cart-item .item-amount8,
+header .six6-cart-item .item-amount9,
+header .six6-cart-item .item-amount10,
+header .six6-cart-item .item-amount11,
+header .six6-cart-item .item-amount12,
+header .seven7-cart-item .item-amount1,
+header .seven7-cart-item .item-amount2,
+header .seven7-cart-item .item-amount3,
+header .seven7-cart-item .item-amount4,
+header .seven7-cart-item .item-amount5,
+header .seven7-cart-item .item-amount6,
+header .seven7-cart-item .item-amount7,
+header .seven7-cart-item .item-amount8,
+header .seven7-cart-item .item-amount9,
+header .seven7-cart-item .item-amount10,
+header .seven7-cart-item .item-amount11,
+header .seven7-cart-item .item-amount12,
+header .eight8-cart-item .item-amount1,
+header .eight8-cart-item .item-amount2,
+header .eight8-cart-item .item-amount3,
+header .eight8-cart-item .item-amount4,
+header .eight8-cart-item .item-amount5,
+header .eight8-cart-item .item-amount6,
+header .eight8-cart-item .item-amount7,
+header .eight8-cart-item .item-amount8,
+header .eight8-cart-item .item-amount9,
+header .eight8-cart-item .item-amount10,
+header .eight8-cart-item .item-amount11,
+header .eight8-cart-item .item-amount12,
+header .nine9-cart-item .item-amount1,
+header .nine9-cart-item .item-amount2,
+header .nine9-cart-item .item-amount3,
+header .nine9-cart-item .item-amount4,
+header .nine9-cart-item .item-amount5,
+header .nine9-cart-item .item-amount6,
+header .nine9-cart-item .item-amount7,
+header .nine9-cart-item .item-amount8,
+header .nine9-cart-item .item-amount9,
+header .nine9-cart-item .item-amount10,
+header .nine9-cart-item .item-amount11,
+header .nine9-cart-item .item-amount12,
+header .ten10-cart-item .item-amount1,
+header .ten10-cart-item .item-amount2,
+header .ten10-cart-item .item-amount3,
+header .ten10-cart-item .item-amount4,
+header .ten10-cart-item .item-amount5,
+header .ten10-cart-item .item-amount6,
+header .ten10-cart-item .item-amount7,
+header .ten10-cart-item .item-amount8,
+header .ten10-cart-item .item-amount9,
+header .ten10-cart-item .item-amount10,
+header .ten10-cart-item .item-amount11,
+header .ten10-cart-item .item-amount12,
+header .eleven11-cart-item .item-amount1,
+header .eleven11-cart-item .item-amount2,
+header .eleven11-cart-item .item-amount3,
+header .eleven11-cart-item .item-amount4,
+header .eleven11-cart-item .item-amount5,
+header .eleven11-cart-item .item-amount6,
+header .eleven11-cart-item .item-amount7,
+header .eleven11-cart-item .item-amount8,
+header .eleven11-cart-item .item-amount9,
+header .eleven11-cart-item .item-amount10,
+header .eleven11-cart-item .item-amount11,
+header .eleven11-cart-item .item-amount12,
+header .twelve12-cart-item .item-amount1,
+header .twelve12-cart-item .item-amount2,
+header .twelve12-cart-item .item-amount3,
+header .twelve12-cart-item .item-amount4,
+header .twelve12-cart-item .item-amount5,
+header .twelve12-cart-item .item-amount6,
+header .twelve12-cart-item .item-amount7,
+header .twelve12-cart-item .item-amount8,
+header .twelve12-cart-item .item-amount9,
+header .twelve12-cart-item .item-amount10,
+header .twelve12-cart-item .item-amount11,
+header .twelve12-cart-item .item-amount12 {
+    text-align: center
+}
+
+header .one1-cart-item .remove-item-1,
+header .one1-cart-item .remove-item-2,
+header .one1-cart-item .remove-item-3,
+header .one1-cart-item .remove-item-4,
+header .one1-cart-item .remove-item-5,
+header .one1-cart-item .remove-item-6,
+header .one1-cart-item .remove-item-7,
+header .one1-cart-item .remove-item-8,
+header .one1-cart-item .remove-item-9,
+header .one1-cart-item .remove-item-10,
+header .one1-cart-item .remove-item-11,
+header .one1-cart-item .remove-item-12,
+header .two2-cart-item .remove-item-1,
+header .two2-cart-item .remove-item-2,
+header .two2-cart-item .remove-item-3,
+header .two2-cart-item .remove-item-4,
+header .two2-cart-item .remove-item-5,
+header .two2-cart-item .remove-item-6,
+header .two2-cart-item .remove-item-7,
+header .two2-cart-item .remove-item-8,
+header .two2-cart-item .remove-item-9,
+header .two2-cart-item .remove-item-10,
+header .two2-cart-item .remove-item-11,
+header .two2-cart-item .remove-item-12,
+header .three3-cart-item .remove-item-1,
+header .three3-cart-item .remove-item-2,
+header .three3-cart-item .remove-item-3,
+header .three3-cart-item .remove-item-4,
+header .three3-cart-item .remove-item-5,
+header .three3-cart-item .remove-item-6,
+header .three3-cart-item .remove-item-7,
+header .three3-cart-item .remove-item-8,
+header .three3-cart-item .remove-item-9,
+header .three3-cart-item .remove-item-10,
+header .three3-cart-item .remove-item-11,
+header .three3-cart-item .remove-item-12,
+header .four4-cart-item .remove-item-1,
+header .four4-cart-item .remove-item-2,
+header .four4-cart-item .remove-item-3,
+header .four4-cart-item .remove-item-4,
+header .four4-cart-item .remove-item-5,
+header .four4-cart-item .remove-item-6,
+header .four4-cart-item .remove-item-7,
+header .four4-cart-item .remove-item-8,
+header .four4-cart-item .remove-item-9,
+header .four4-cart-item .remove-item-10,
+header .four4-cart-item .remove-item-11,
+header .four4-cart-item .remove-item-12,
+header .five5-cart-item .remove-item-1,
+header .five5-cart-item .remove-item-2,
+header .five5-cart-item .remove-item-3,
+header .five5-cart-item .remove-item-4,
+header .five5-cart-item .remove-item-5,
+header .five5-cart-item .remove-item-6,
+header .five5-cart-item .remove-item-7,
+header .five5-cart-item .remove-item-8,
+header .five5-cart-item .remove-item-9,
+header .five5-cart-item .remove-item-10,
+header .five5-cart-item .remove-item-11,
+header .five5-cart-item .remove-item-12,
+header .six6-cart-item .remove-item-1,
+header .six6-cart-item .remove-item-2,
+header .six6-cart-item .remove-item-3,
+header .six6-cart-item .remove-item-4,
+header .six6-cart-item .remove-item-5,
+header .six6-cart-item .remove-item-6,
+header .six6-cart-item .remove-item-7,
+header .six6-cart-item .remove-item-8,
+header .six6-cart-item .remove-item-9,
+header .six6-cart-item .remove-item-10,
+header .six6-cart-item .remove-item-11,
+header .six6-cart-item .remove-item-12,
+header .seven7-cart-item .remove-item-1,
+header .seven7-cart-item .remove-item-2,
+header .seven7-cart-item .remove-item-3,
+header .seven7-cart-item .remove-item-4,
+header .seven7-cart-item .remove-item-5,
+header .seven7-cart-item .remove-item-6,
+header .seven7-cart-item .remove-item-7,
+header .seven7-cart-item .remove-item-8,
+header .seven7-cart-item .remove-item-9,
+header .seven7-cart-item .remove-item-10,
+header .seven7-cart-item .remove-item-11,
+header .seven7-cart-item .remove-item-12,
+header .eight8-cart-item .remove-item-1,
+header .eight8-cart-item .remove-item-2,
+header .eight8-cart-item .remove-item-3,
+header .eight8-cart-item .remove-item-4,
+header .eight8-cart-item .remove-item-5,
+header .eight8-cart-item .remove-item-6,
+header .eight8-cart-item .remove-item-7,
+header .eight8-cart-item .remove-item-8,
+header .eight8-cart-item .remove-item-9,
+header .eight8-cart-item .remove-item-10,
+header .eight8-cart-item .remove-item-11,
+header .eight8-cart-item .remove-item-12,
+header .nine9-cart-item .remove-item-1,
+header .nine9-cart-item .remove-item-2,
+header .nine9-cart-item .remove-item-3,
+header .nine9-cart-item .remove-item-4,
+header .nine9-cart-item .remove-item-5,
+header .nine9-cart-item .remove-item-6,
+header .nine9-cart-item .remove-item-7,
+header .nine9-cart-item .remove-item-8,
+header .nine9-cart-item .remove-item-9,
+header .nine9-cart-item .remove-item-10,
+header .nine9-cart-item .remove-item-11,
+header .nine9-cart-item .remove-item-12,
+header .ten10-cart-item .remove-item-1,
+header .ten10-cart-item .remove-item-2,
+header .ten10-cart-item .remove-item-3,
+header .ten10-cart-item .remove-item-4,
+header .ten10-cart-item .remove-item-5,
+header .ten10-cart-item .remove-item-6,
+header .ten10-cart-item .remove-item-7,
+header .ten10-cart-item .remove-item-8,
+header .ten10-cart-item .remove-item-9,
+header .ten10-cart-item .remove-item-10,
+header .ten10-cart-item .remove-item-11,
+header .ten10-cart-item .remove-item-12,
+header .eleven11-cart-item .remove-item-1,
+header .eleven11-cart-item .remove-item-2,
+header .eleven11-cart-item .remove-item-3,
+header .eleven11-cart-item .remove-item-4,
+header .eleven11-cart-item .remove-item-5,
+header .eleven11-cart-item .remove-item-6,
+header .eleven11-cart-item .remove-item-7,
+header .eleven11-cart-item .remove-item-8,
+header .eleven11-cart-item .remove-item-9,
+header .eleven11-cart-item .remove-item-10,
+header .eleven11-cart-item .remove-item-11,
+header .eleven11-cart-item .remove-item-12,
+header .twelve12-cart-item .remove-item-1,
+header .twelve12-cart-item .remove-item-2,
+header .twelve12-cart-item .remove-item-3,
+header .twelve12-cart-item .remove-item-4,
+header .twelve12-cart-item .remove-item-5,
+header .twelve12-cart-item .remove-item-6,
+header .twelve12-cart-item .remove-item-7,
+header .twelve12-cart-item .remove-item-8,
+header .twelve12-cart-item .remove-item-9,
+header .twelve12-cart-item .remove-item-10,
+header .twelve12-cart-item .remove-item-11,
+header .twelve12-cart-item .remove-item-12 {
+    color: grey;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out
+}
+
+header .one1-cart-item .remove-item-1:hover,
+header .one1-cart-item .remove-item-2:hover,
+header .one1-cart-item .remove-item-3:hover,
+header .one1-cart-item .remove-item-4:hover,
+header .one1-cart-item .remove-item-5:hover,
+header .one1-cart-item .remove-item-6:hover,
+header .one1-cart-item .remove-item-7:hover,
+header .one1-cart-item .remove-item-8:hover,
+header .one1-cart-item .remove-item-9:hover,
+header .one1-cart-item .remove-item-10:hover,
+header .one1-cart-item .remove-item-11:hover,
+header .one1-cart-item .remove-item-12:hover,
+header .two2-cart-item .remove-item-1:hover,
+header .two2-cart-item .remove-item-2:hover,
+header .two2-cart-item .remove-item-3:hover,
+header .two2-cart-item .remove-item-4:hover,
+header .two2-cart-item .remove-item-5:hover,
+header .two2-cart-item .remove-item-6:hover,
+header .two2-cart-item .remove-item-7:hover,
+header .two2-cart-item .remove-item-8:hover,
+header .two2-cart-item .remove-item-9:hover,
+header .two2-cart-item .remove-item-10:hover,
+header .two2-cart-item .remove-item-11:hover,
+header .two2-cart-item .remove-item-12:hover,
+header .three3-cart-item .remove-item-1:hover,
+header .three3-cart-item .remove-item-2:hover,
+header .three3-cart-item .remove-item-3:hover,
+header .three3-cart-item .remove-item-4:hover,
+header .three3-cart-item .remove-item-5:hover,
+header .three3-cart-item .remove-item-6:hover,
+header .three3-cart-item .remove-item-7:hover,
+header .three3-cart-item .remove-item-8:hover,
+header .three3-cart-item .remove-item-9:hover,
+header .three3-cart-item .remove-item-10:hover,
+header .three3-cart-item .remove-item-11:hover,
+header .three3-cart-item .remove-item-12:hover,
+header .four4-cart-item .remove-item-1:hover,
+header .four4-cart-item .remove-item-2:hover,
+header .four4-cart-item .remove-item-3:hover,
+header .four4-cart-item .remove-item-4:hover,
+header .four4-cart-item .remove-item-5:hover,
+header .four4-cart-item .remove-item-6:hover,
+header .four4-cart-item .remove-item-7:hover,
+header .four4-cart-item .remove-item-8:hover,
+header .four4-cart-item .remove-item-9:hover,
+header .four4-cart-item .remove-item-10:hover,
+header .four4-cart-item .remove-item-11:hover,
+header .four4-cart-item .remove-item-12:hover,
+header .five5-cart-item .remove-item-1:hover,
+header .five5-cart-item .remove-item-2:hover,
+header .five5-cart-item .remove-item-3:hover,
+header .five5-cart-item .remove-item-4:hover,
+header .five5-cart-item .remove-item-5:hover,
+header .five5-cart-item .remove-item-6:hover,
+header .five5-cart-item .remove-item-7:hover,
+header .five5-cart-item .remove-item-8:hover,
+header .five5-cart-item .remove-item-9:hover,
+header .five5-cart-item .remove-item-10:hover,
+header .five5-cart-item .remove-item-11:hover,
+header .five5-cart-item .remove-item-12:hover,
+header .six6-cart-item .remove-item-1:hover,
+header .six6-cart-item .remove-item-2:hover,
+header .six6-cart-item .remove-item-3:hover,
+header .six6-cart-item .remove-item-4:hover,
+header .six6-cart-item .remove-item-5:hover,
+header .six6-cart-item .remove-item-6:hover,
+header .six6-cart-item .remove-item-7:hover,
+header .six6-cart-item .remove-item-8:hover,
+header .six6-cart-item .remove-item-9:hover,
+header .six6-cart-item .remove-item-10:hover,
+header .six6-cart-item .remove-item-11:hover,
+header .six6-cart-item .remove-item-12:hover,
+header .seven7-cart-item .remove-item-1:hover,
+header .seven7-cart-item .remove-item-2:hover,
+header .seven7-cart-item .remove-item-3:hover,
+header .seven7-cart-item .remove-item-4:hover,
+header .seven7-cart-item .remove-item-5:hover,
+header .seven7-cart-item .remove-item-6:hover,
+header .seven7-cart-item .remove-item-7:hover,
+header .seven7-cart-item .remove-item-8:hover,
+header .seven7-cart-item .remove-item-9:hover,
+header .seven7-cart-item .remove-item-10:hover,
+header .seven7-cart-item .remove-item-11:hover,
+header .seven7-cart-item .remove-item-12:hover,
+header .eight8-cart-item .remove-item-1:hover,
+header .eight8-cart-item .remove-item-2:hover,
+header .eight8-cart-item .remove-item-3:hover,
+header .eight8-cart-item .remove-item-4:hover,
+header .eight8-cart-item .remove-item-5:hover,
+header .eight8-cart-item .remove-item-6:hover,
+header .eight8-cart-item .remove-item-7:hover,
+header .eight8-cart-item .remove-item-8:hover,
+header .eight8-cart-item .remove-item-9:hover,
+header .eight8-cart-item .remove-item-10:hover,
+header .eight8-cart-item .remove-item-11:hover,
+header .eight8-cart-item .remove-item-12:hover,
+header .nine9-cart-item .remove-item-1:hover,
+header .nine9-cart-item .remove-item-2:hover,
+header .nine9-cart-item .remove-item-3:hover,
+header .nine9-cart-item .remove-item-4:hover,
+header .nine9-cart-item .remove-item-5:hover,
+header .nine9-cart-item .remove-item-6:hover,
+header .nine9-cart-item .remove-item-7:hover,
+header .nine9-cart-item .remove-item-8:hover,
+header .nine9-cart-item .remove-item-9:hover,
+header .nine9-cart-item .remove-item-10:hover,
+header .nine9-cart-item .remove-item-11:hover,
+header .nine9-cart-item .remove-item-12:hover,
+header .ten10-cart-item .remove-item-1:hover,
+header .ten10-cart-item .remove-item-2:hover,
+header .ten10-cart-item .remove-item-3:hover,
+header .ten10-cart-item .remove-item-4:hover,
+header .ten10-cart-item .remove-item-5:hover,
+header .ten10-cart-item .remove-item-6:hover,
+header .ten10-cart-item .remove-item-7:hover,
+header .ten10-cart-item .remove-item-8:hover,
+header .ten10-cart-item .remove-item-9:hover,
+header .ten10-cart-item .remove-item-10:hover,
+header .ten10-cart-item .remove-item-11:hover,
+header .ten10-cart-item .remove-item-12:hover,
+header .eleven11-cart-item .remove-item-1:hover,
+header .eleven11-cart-item .remove-item-2:hover,
+header .eleven11-cart-item .remove-item-3:hover,
+header .eleven11-cart-item .remove-item-4:hover,
+header .eleven11-cart-item .remove-item-5:hover,
+header .eleven11-cart-item .remove-item-6:hover,
+header .eleven11-cart-item .remove-item-7:hover,
+header .eleven11-cart-item .remove-item-8:hover,
+header .eleven11-cart-item .remove-item-9:hover,
+header .eleven11-cart-item .remove-item-10:hover,
+header .eleven11-cart-item .remove-item-11:hover,
+header .eleven11-cart-item .remove-item-12:hover,
+header .twelve12-cart-item .remove-item-1:hover,
+header .twelve12-cart-item .remove-item-2:hover,
+header .twelve12-cart-item .remove-item-3:hover,
+header .twelve12-cart-item .remove-item-4:hover,
+header .twelve12-cart-item .remove-item-5:hover,
+header .twelve12-cart-item .remove-item-6:hover,
+header .twelve12-cart-item .remove-item-7:hover,
+header .twelve12-cart-item .remove-item-8:hover,
+header .twelve12-cart-item .remove-item-9:hover,
+header .twelve12-cart-item .remove-item-10:hover,
+header .twelve12-cart-item .remove-item-11:hover,
+header .twelve12-cart-item .remove-item-12:hover {
+    color: #e0e0e0
+}
+
+header .one1-cart-item .fa-chevron-up,
+header .one1-cart-item .fa-chevron-down,
+header .two2-cart-item .fa-chevron-up,
+header .two2-cart-item .fa-chevron-down,
+header .three3-cart-item .fa-chevron-up,
+header .three3-cart-item .fa-chevron-down,
+header .four4-cart-item .fa-chevron-up,
+header .four4-cart-item .fa-chevron-down,
+header .five5-cart-item .fa-chevron-up,
+header .five5-cart-item .fa-chevron-down,
+header .six6-cart-item .fa-chevron-up,
+header .six6-cart-item .fa-chevron-down,
+header .seven7-cart-item .fa-chevron-up,
+header .seven7-cart-item .fa-chevron-down,
+header .eight8-cart-item .fa-chevron-up,
+header .eight8-cart-item .fa-chevron-down,
+header .nine9-cart-item .fa-chevron-up,
+header .nine9-cart-item .fa-chevron-down,
+header .ten10-cart-item .fa-chevron-up,
+header .ten10-cart-item .fa-chevron-down,
+header .eleven11-cart-item .fa-chevron-up,
+header .eleven11-cart-item .fa-chevron-down,
+header .twelve12-cart-item .fa-chevron-up,
+header .twelve12-cart-item .fa-chevron-down {
+    color: #b66f2d;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out
+}
+
+header .one1-cart-item .fa-chevron-up:hover,
+header .one1-cart-item .fa-chevron-down:hover,
+header .two2-cart-item .fa-chevron-up:hover,
+header .two2-cart-item .fa-chevron-down:hover,
+header .three3-cart-item .fa-chevron-up:hover,
+header .three3-cart-item .fa-chevron-down:hover,
+header .four4-cart-item .fa-chevron-up:hover,
+header .four4-cart-item .fa-chevron-down:hover,
+header .five5-cart-item .fa-chevron-up:hover,
+header .five5-cart-item .fa-chevron-down:hover,
+header .six6-cart-item .fa-chevron-up:hover,
+header .six6-cart-item .fa-chevron-down:hover,
+header .seven7-cart-item .fa-chevron-up:hover,
+header .seven7-cart-item .fa-chevron-down:hover,
+header .eight8-cart-item .fa-chevron-up:hover,
+header .eight8-cart-item .fa-chevron-down:hover,
+header .nine9-cart-item .fa-chevron-up:hover,
+header .nine9-cart-item .fa-chevron-down:hover,
+header .ten10-cart-item .fa-chevron-up:hover,
+header .ten10-cart-item .fa-chevron-down:hover,
+header .eleven11-cart-item .fa-chevron-up:hover,
+header .eleven11-cart-item .fa-chevron-down:hover,
+header .twelve12-cart-item .fa-chevron-up:hover,
+header .twelve12-cart-item .fa-chevron-down:hover {
+    color: #db8637
+}
+
+header .one__view__openBtn,
+header .one__view__closeBtn,
+header .two__view__openBtn,
+header .two__view__closeBtn,
+header .three__view__openBtn,
+header .three__view__closeBtn,
+header .four__view__openBtn,
+header .four__view__closeBtn,
+header .five__view__openBtn,
+header .five__view__closeBtn,
+header .six__view__openBtn,
+header .six__view__closeBtn,
+header .seven__view__openBtn,
+header .seven__view__closeBtn,
+header .eight__view__openBtn,
+header .eight__view__closeBtn,
+header .nine__view__openBtn,
+header .nine__view__closeBtn,
+header .ten__view__openBtn,
+header .ten__view__closeBtn,
+header .eleven__view__openBtn,
+header .eleven__view__closeBtn,
+header .twelve__view__openBtn,
+header .twelve__view__closeBtn {
+    cursor: pointer
+}
+
+header .one__view__closeBtn,
+header .two__view__closeBtn,
+header .three__view__closeBtn,
+header .four__view__closeBtn,
+header .five__view__closeBtn,
+header .six__view__closeBtn,
+header .seven__view__closeBtn,
+header .eight__view__closeBtn,
+header .nine__view__closeBtn,
+header .ten__view__closeBtn,
+header .eleven__view__closeBtn,
+header .twelve__view__closeBtn {
+    position: fixed;
+    right: 5%;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out
+}
+
+header .one__view__closeBtn:hover,
+header .two__view__closeBtn:hover,
+header .three__view__closeBtn:hover,
+header .four__view__closeBtn:hover,
+header .five__view__closeBtn:hover,
+header .six__view__closeBtn:hover,
+header .seven__view__closeBtn:hover,
+header .eight__view__closeBtn:hover,
+header .nine__view__closeBtn:hover,
+header .ten__view__closeBtn:hover,
+header .eleven__view__closeBtn:hover,
+header .twelve__view__closeBtn:hover {
+    color: #b66f2d
+}
+
+header .one__view-overlay,
+header .two__view-overlay,
+header .three__view-overlay,
+header .four__view-overlay,
+header .five__view-overlay,
+header .six__view-overlay,
+header .seven__view-overlay,
+header .eight__view-overlay,
+header .nine__view-overlay,
+header .ten__view-overlay,
+header .eleven__view-overlay,
+header .twelve__view-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    background: rgba(112, 112, 112, 0.5);
+    z-index: 4;
+    visibility: hidden
+}
+
+header .one__view,
+header .two__view,
+header .three__view,
+header .four__view,
+header .five__view,
+header .six__view,
+header .seven__view,
+header .eight__view,
+header .nine__view,
+header .ten__view,
+header .eleven__view,
+header .twelve__view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    overflow: auto;
+    z-index: 5;
+    background: #151515;
+    padding: 1.5rem;
+    transition: all 0.5s ease-in-out;
+    border: 2px groove #707070;
+    transform: translateX(-100%);
+    text-align: center;
+    font-family: "Baloo 2", cursive;
+    color: #e0e0e0
+}
+
+header .one__transparentBcg,
+header .two__transparentBcg,
+header .three__transparentBcg,
+header .four__transparentBcg,
+header .five__transparentBcg,
+header .six__transparentBcg,
+header .seven__transparentBcg,
+header .eight__transparentBcg,
+header .nine__transparentBcg,
+header .ten__transparentBcg,
+header .eleven__transparentBcg,
+header .twelve__transparentBcg {
+    visibility: visible
+}
+
+header .one__showview,
+header .two__showview,
+header .three__showview,
+header .four__showview,
+header .five__showview,
+header .six__showview,
+header .seven__showview,
+header .eight__showview,
+header .nine__showview,
+header .ten__showview,
+header .eleven__showview,
+header .twelve__showview {
+    transform: translateX(0)
+}
+
+header img {
+    width: 300px;
+    height: 300px;
+    margin: 1.5rem 0;
+    border-radius: 20rem;
+    border: 5px solid #b66f2d
+}
+
+header .nutritional_info {
+    text-align: left
+}
+
+header .nutritional_info h2 {
+    text-align: center
+}
+
+header .nutritional_info .bar {
+    margin: 0.25rem 0;
+    padding: 0.25rem 0
+}
+
+header .nutritional_info .bar-large {
+    border-bottom: 5px solid #e0e0e0
+}
+
+header .nutritional_info .bar-medium {
+    border-bottom: 2px solid #e0e0e0
+}
+
+header .nutritional_info .bar-small {
+    border-bottom: 1px solid #e0e0e0
+}
+
+header .nutritional_info .span-right {
+    float: right
+}
+
+header .nutritional_info .span-align-right {
+    text-align: right
+}
+
+header .nutritional_info .indent {
+    text-indent: 2rem
+}
+
+header .ingredients,
+header .allergens {
+    margin: 1.5rem 0
+}
+
+header .ingredients h2,
+header .allergens h2 {
+    color: #b66f2d
+}
+#logonav{
+    border: 0px solid white ;
+    display: inline; 
+    padding: 20px !important; 
+    height: 76px !important; 
+    width: 144px !important; 
+    box-sizing: unset !important; 
+    margin: 0px !important; 
+    padding-top: 0% !important;
+    border-radius: 0cap !important;
+    border-top-left-radius: 0rem !important; 
+    border-top-right-radius: 0rem !important;
+    border-bottom-right-radius: 0rem !important;
+    border-bottom-left-radius: 0rem !important;
+        
+}

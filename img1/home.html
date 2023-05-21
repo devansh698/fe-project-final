@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var urls = ['home-1-slider-image-1.jpg', 'home-1-slider-image-2.jpg', 'home-1-slider-image-3.jpg'];
+
+            var cout = 1;
+            $('#head1').css('background-image', 'url("' + urls[0] + '")');
+            setInterval(function () {
+                $('#head1').css('background-image', 'url("' + urls[cout] + '")');
+                cout == urls.length - 1 ? cout = 0 : cout++;
+            }, 5000);
+
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <img src="logo-light.png" alt="" width="144px" height="76px" style="display: inline; padding: 20px;">
+            <ul style="display: inline;float: right; padding-top: 40px; padding-right: 50px;">
+                <!-- <li><img src="logo-light.png" alt="" width="144px" height="76px"></li> -->
+                <li><a href="#">Home</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="oderonline.html"> Oder Online</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="#">About-Us</a></li>
+                <li><a href="#">Contect Us</a></li>
+                <li><a href="login.html" class="fa fa-sign-in"></a></li>
+                <li><a href="#" class="fa fa-search"></a></li>
+                <!-- <li><a href="#" class="fa fa-cart-plus"></a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <div class="head" id="head1">
+        <img id="ii1" src="h1-slider-img-1.png" style="padding-top: 180px;margin-left: 65%;">
+        <h1>COFFEE MASTERS</h1>
+        <img src="https://www.cafecoffeeday.com/sites/default/files/history-text_0_0.png" alt="" width="18%"
+            style="margin-left: 65%;">
+    </div>
+    <div class="body1">
+        <h1>OUR DELICIOUS OFFER</h1>
+        <h2>A truck that carries healthy foods for your healthy moods.</h2>
+        <h1><img src="title-separator.png" alt=""></h1>
+        <div class="body1-1">
+            <img src="h2-custom-icon-5.png" alt="">
+            <br>
+            <a href="#">TYPES OF COFFEE</a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit fugiat doloremque, pariatur praesentium
+                ab non assumenda nostrum unde minus quas natus facilis temporibus ipsa ratione quis distinctio eaque
+                sequi vel.</p>
+        </div>
+        <div class="body1-1">
+            <img src="h2-custom-icon-6.png" alt="">
+            <br>
+            <a href="#">BEAN VARIETIES</a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit fugiat doloremque, pariatur praesentium
+                ab non assumenda nostrum unde minus quas natus facilis temporibus ipsa ratione quis distinctio eaque
+                sequi vel.</p>
+        </div>
+        <div class="body1-1">
+            <img src="h2-custom-icon-7.png" alt="">
+            <br>
+            <a href="#">COFFEE & PASTRY</a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit fugiat doloremque, pariatur praesentium
+                ab non assumenda nostrum unde minus quas natus facilis temporibus ipsa ratione quis distinctio eaque
+                sequi vel.</p>
+        </div>
+        <div class="body1-1">
+            <img src="h2-custom-icon-8.png" alt="">
+            <br>
+            <a href="#">COFFEE TO GO</a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit fugiat doloremque, pariatur praesentium
+                ab non assumenda nostrum unde minus quas natus facilis temporibus ipsa ratione quis distinctio eaque
+                sequi vel.</p>
+        </div>
+    </div>
+    <div class="body2">
+        <h1>THE COFFEE HERALD</h1>
+        <img src="title-separator.png" alt="" style="text-align: center;">
+        <h2>Barista Institute coffee blog is made with genuine love for coffee, with a Nordic twist. We hope you enjoy
+            our coffee blog and get inspired!
+        </h2>
+        <div class="flex-container">
+            <div class="flex-item-left">
+                <img src="blog-1-img-1.jpg" alt="" width="90%">
+                <br>
+                <h2>PREP TECHNIQUES</h2>
+            </div>
+            <div class="flex-item-center">
+                <img src="blog-1-img-2.jpg" alt="" width="90%">
+                <br>
+                <h2>FRENCH PRESS</h2>
+            </div>
+            <div class="flex-item-right">
+                <img src="blog-1-img-3.jpg" alt="" width="90%">
+                <br>
+                <h2>TURKISH IBRIK</h2>
+            </div>
+
+        </div>
+        <div style="width: 100%; height: 100px; background-color: white;">
+            <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa quod quidem
+                vero blanditiis ullam enim, dignissimos quaerat atque impedit maiores, eos facilis porro natus nam quia.
+                Neque, delectus reprehenderit?</p>
+        </div>
+        <div class="body3">
+            <img src="h1-single-img-1-250x226.png" alt="" style="padding: 200px;">
+
+        </div>
+    </div>
+    <div class="body4">
+        <div class="flex-container">
+            <div class="flex-b4">
+                <h1>250</h1>
+                <h5>VARIETIES OF COFFEE</h5>
+            </div>
+            <div class="flex-b4">
+                <h1>120</h1>
+                <h5>HOURS OF TESTING</h5>
+            </div>
+            <div class="flex-b4">
+                <h1>320</h1>
+                <h5>COFFEE MARKETS</h5>
+            </div>
+            <div class="flex-b4">
+                <h1>210</h1>
+                <h5>COFFEE BRANDS</h5>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="body5">
+        <h1>OUR OUTLETS</h1>
+        <img src="title-separator.png" alt="">
+        <div class="flex-container">
+            <div class="flex-b5">
+                <img src="https://cafebeats.in/wp-content/uploads/2022/04/06-1024x768.jpg" alt="">
+            </div>
+            <div class="flex-b5">
+                <img src="https://cafebeats.in/wp-content/uploads/2021/03/WhatsApp-Image-2021-03-13-at-3.14.42-PM.jpeg"
+                    alt="">
+            </div>
+            <div class="flex-b5">
+                <img src="https://cafebeats.in/wp-content/uploads/2021/04/Untitled-5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="body6">
+        <h1 style="text-align: center; margin-top: 70px;">OUR SWEET GALLERY</h1>
+        <img src="title-separator.png">
+        <div class="flex-container1">
+            <div class="flex-b6">
+                <img src="port-1-img-1.jpg" alt="">
+            </div>
+            <div class="flex-b6">
+                <img src="port-1-img-2.jpg" alt="">
+            </div>
+            <div class="flex-b6">
+                <img src="port-1-img-3.jpg" alt="">
+            </div>
+            <div class="flex-b6">
+                <img src="port-1-img-4.jpg" alt="">
+            </div>
+            <div class="flex-b6">
+                <img src="port-1-img-5.jpg" alt="">
+            </div>
+            <div class="flex-b6">
+                <img src="port-1-img-6.jpg" alt="">
+            </div>
+            <div class="flex-b6">
+                <img src="port-1-img-7.jpg" alt="">
+            </div>
+            <div class="flex-b6">
+                <img src="port-1-img-8.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="body7">
+        <div class="flex-container">
+            <div class="flex-b7" id="b7-1"><img src="clients-img-1.png" alt=""></div>
+            <div class="flex-b7" id="b7-2"><img src="clients-img-2.png" alt=""></div>
+            <div class="flex-b7" id="b7-3"><img src="clients-img-3.png" alt=""></div>
+            <div class="flex-b7" id="b7-4"><img src="clients-img-4-hover.png" alt=""></div>
+            <div class="flex-b7" id="b7-5"><img src="clients-img-5.png" alt=""></div>
+            <!-- <div class="flex-b7"><img src="clients-img-6.png" alt=""></div> -->
+        </div>
+    </div>
+    <footer>
+        <img src="logo-footer-sidearea.png" alt="" style="padding-top: 120px; width: 20%;">
+        <p style="padding-top: 40px;">CAFE BEATS OWNERSHIP HAS A STRONG VISION OF BECOMING<br>
+            A MOST LOVED LEISURE CAFE BRAND THAT SPREADS<br>
+            DELICIOUS PRODUCTS AND SERVICE SMILES ACROSS THE GLOBE</p>
+        <br><br><br><br>
+        <h2>STORES</h2>
+        <h4>Delhi</h4>
+        <h4>Chandigrah</h4>
+        <h4>Mumbai</h4>
+        <h2 style="margin-top: 60px;">NEWS AS FRESH AS OUR COFFEE</h2>
+        <form action="">
+            <input type="email" placeholder="Email"
+                style="width: 15%;height: 30px; border: 2px solid white;border-radius: 3px; background: none; margin-bottom: 150px;">
+        </form>
+        <nav class="nav1">
+            <img src="logo-light.png" alt="" width="144px" height="76px" style="display: inline; padding: 20px;">
+            <ul style="display: inline; padding-top: 40px; padding-right: 50px; float: left;">
+                <!-- <li><img src="logo-light.png" alt="" width="144px" height="76px"></li> -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About-Us</a></li>
+                <li><a href="#">Contect Us</a></li>
+                <li style="padding-left: 80px;"><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+
+            </ul>
+        </nav>
+
+
+    </footer>
+
+
+</body>
+
+</html>

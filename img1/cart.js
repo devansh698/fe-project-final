@@ -1,4 +1,4 @@
-
+"use strict";
 class Storage {
     static setAmount(itemName, itemAmount) {
       localStorage.setItem(itemName, itemAmount.toString());

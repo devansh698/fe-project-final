@@ -1,14 +1,5 @@
 "use strict";
 
-class Storage {
-    static setAmount(itemName, itemAmount) {
-      localStorage.setItem(itemName, itemAmount.toString());
-    }
-    static removeAmount(itemName) {
-      localStorage.removeItem(itemName);
-    }
-  }
-
 // Shopping Cart Open and Close Function
 const html = document.querySelector("html");
 const cart = document.querySelector(".cart");
@@ -51,7 +42,7 @@ function updateTotal(moneyChange) {
   totalAmount += moneyChange;
   localStorage.setItem("total", totalAmount.toString());
   if (totalAmount > 1) {
-    total.innerHTML = `<span class="span-primary">Total Amount:</span> $${totalAmount.toFixed(
+    total.innerHTML = `<span class="span-primary">Total Amount:</span> Rs. ${totalAmount.toFixed(
       2
     )}`;
   } else {

@@ -61,6 +61,12 @@ class Storage {
   static getPassword() {
     return localStorage.getItem("password");
   }
+  static setAmount(itemName, itemAmount) {
+    localStorage.setItem(itemName, itemAmount.toString());
+  }
+  static removeAmount(itemName) {
+    localStorage.removeItem(itemName);
+  }
 }
 let currUser = Storage.getUsername();
 if (currUser) {

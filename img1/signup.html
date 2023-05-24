@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Caffa Coffee Shop - Sign Up</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -12,7 +13,7 @@
       padding: 20px;
       background-color: #f6f6f6;
     }
-    
+
     h1 {
       text-align: center;
       color: #333;
@@ -20,7 +21,7 @@
       font-weight: 700;
       margin-top: 0;
     }
-    
+
     .signup-form {
       max-width: 400px;
       margin: 20px auto;
@@ -29,7 +30,7 @@
       border-radius: 10px;
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     }
-    
+
     .signup-form label {
       font-weight: bold;
       color: #555;
@@ -37,7 +38,7 @@
       display: block;
       margin-bottom: 5px;
     }
-    
+
     .signup-form input[type="text"],
     .signup-form input[type="email"],
     .signup-form input[type="password"] {
@@ -51,14 +52,14 @@
       box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
       transition: all 0.3s ease-out;
     }
-    
+
     .signup-form input[type="text"]:focus,
     .signup-form input[type="email"]:focus,
     .signup-form input[type="password"]:focus {
       box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
       background-color: #fff;
     }
-    
+
     .signup-form input[type="submit"] {
       padding: 10px 20px;
       background-color: #4CAF50;
@@ -69,23 +70,23 @@
       font-size: 16px;
       transition: all 0.3s ease-out;
     }
-    
+
     .signup-form input[type="submit"]:hover {
       background-color: #45a049;
     }
-    
+
     .signup-form .fa-coffee {
       font-size: 60px;
       color: #4CAF50;
       text-align: center;
       margin-bottom: 20px;
     }
-    
+
     .signup-form .form-group {
       position: relative;
       margin-bottom: 30px;
     }
-    
+
     .signup-form .form-group label {
       position: absolute;
       top: -20px;
@@ -97,43 +98,50 @@
       font-weight: 700;
       transition: all 0.3s ease;
     }
-</style>
-<link rel="stylesheet" href="home.css">
+  </style>
+  <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
   <header>
     <nav class="nav">
-        <img src="logo-light.png" alt="" width="144px" height="76px" style="display: inline; padding: 20px;">
-        <ul style="display: inline;float: right; padding-top: 40px; padding-right: 50px;">
-            <!-- <li><img src="logo-light.png" alt="" width="144px" height="76px"></li> -->
-            <li><a href="home.html">Home</a></li>
-            <li><a href="menu.html">Our Menu</a></li>
-            <li><a href="oderonline.html"> Oder Online</a></li>
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="#">About-Us</a></li>
-            <li><a href="#">Contect Us</a></li>
-            <li><a href="login.html" class="fa fa-sign-in"></a></li>
-            <li><a href="#" class="fa fa-search"></a></li>
-            <!-- <li><a href="#" class="fa fa-cart-plus"></a></li> -->
-        </ul>
+      <img src="logo-light.png" alt="" width="144px" height="76px" style="display: inline; padding: 20px;">
+      <ul style="display: inline;float: right; padding-top: 40px; padding-right: 50px;">
+        <!-- <li><img src="logo-light.png" alt="" width="144px" height="76px"></li> -->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="oderonline.html"> Oder Online</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="#">About-Us</a></li>
+        <li><a href="#">Contect Us</a></li>
+        <li><a href="login.html" class="fa fa-sign-in"></a></li>
+        <li><a href="#" class="fa fa-search"></a></li>
+        <!-- <li><a href="#" class="fa fa-cart-plus"></a></li> -->
+      </ul>
     </nav>
-</header>
+  </header>
   <div class="signup-form">
     <i class="fas fa-coffee"></i>
     <h1>Sign Up for Caffa Coffee Shop</h1>
-    
+
     <form action="signup.php" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
-      
+
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      
+      <input type="email" id="email" name="email" required class="emailid" id="emailid">
+
+      <label>Username: </label> <br />
+      <input type="text" name="userid" id="userid" pattern="[a-zA-Z0-9]+" required />
+
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-      
-      <input type="submit" value="Sign Up">
+      <input type="password" id="password" name="password" class="pswrd" id="pswrd" required>
+
     </form>
+    <div id="username-display"></div>
+    <button class="btn-order" id="sign-up-btn">Sign Up</button>
+  </div>
   </div>
 </body>
+
 </html>

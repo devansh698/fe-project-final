@@ -1,130 +1,100 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
-
-        input[type=text],
-        input[type=password] {
-            width: 35%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #04AA6D;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 30%;
-        }
-
-        button:hover {
-            opacity: 0.8;
-        }
-
-        .cancelbtn {
-            width: auto;
-            padding: 10px 18px;
-            background-color: #f44336;
-        }
-
-        .imgcontainer {
-            text-align: center;
-            margin: 24px 0 12px 0;
-        }
-
-        img.avatar {
-            width: 20%;
-            border-radius: 50%;
-        }
-
-        .container {
-            padding: 16px;
-        }
-
-        span.psw {
-            float: right;
-            padding-top: 16px;
-        }
-
-        @media screen and (max-width: 300px) {
-            span.psw {
-                display: block;
-                float: none;
-            }
-
-            .cancelbtn {
-                width: 100%;
-            }
-        }
-    </style>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drip Cafe - Sign In</title>
+    <link rel="stylesheet" href="login1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../img/favicon.png" />
     <link rel="stylesheet" href="home.css">
-</head>
+  </head>
 
-<body style="background-image: url(h1-bacground-img-1.jpg);">
+  <body>
     <header>
-        <nav class="nav">
+      <div class="second-header">
+        <div class="menu-btn">
+          <span class="menu-btn__burger"></span>
+        </div>
+        <nav class="nav" class="menu-nav">
             <img src="logo-light.png" alt="" width="144px" height="76px" style="display: inline; padding: 20px;">
             <ul style="display: inline;float: right; padding-top: 40px; padding-right: 50px;">
-                <!-- <li><img src="logo-light.png" alt="" width="144px" height="76px"></li> -->
-                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="menu.html">Our Menu</a></li>
-                <li><a href="oderonline.html"> Oder Online</a></li>
+                <li><a href="oderonline.html">Online o</a></li>
                 <li><a href="locations.html">Locations</a></li>
                 <li><a href="#">About-Us</a></li>
                 <li><a href="#">Contect Us</a></li>
-                <li><a href="login.html" class="fa fa-sign-in"></a></li>
+                <!-- <li><a href="login.html" class="fa fa-sign-in"></a></li> -->
+                <li class="menu-nav__item">
+                    <a href="login.html" class="sign-in menu-nav__link active">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                      Sign In
+                    </a>
+                    <span class="menu-nav__link" id="slash">/</span>
+              <a href="signup.html" class="sign-up menu-nav__link">
+                Sign Up
+              </a>
+                </li>
                 <li><a href="#" class="fa fa-search"></a></li>
                 <!-- <li><a href="#" class="fa fa-cart-plus"></a></li> -->
             </ul>
-        </nav>
+      </div>
     </header>
 
-    <h2>Login Form</h2>
-
-    <form action="" method="post">
-        <div class="imgcontainer">
-            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+    <main>
+      <section class="sign-in">
+        <div class="pic-area">
+          <div class="pic-area-text">
+            <div id="login-box">
+              <form
+                id="login-form"
+                name="login-form"
+                action="index.html"
+                method="post"
+              >
+                <label>Username: </label> <br />
+                <input
+                  type="text"
+                  name="userid"
+                  id="userid"
+                  pattern="[a-zA-Z0-9]+"
+                  required
+                />
+                <!-- minlength="10" does not work probably bc you need to use the submit button--><br />
+                <label>Password: </label> <br />
+                <input type="password" name="pswrd" id="pswrd" /><br />
+                <br />
+              </form>
+              <div id="username-display"></div>
+              <button class="btn-order" id="login-btn">Login</button>
+            </div>
+            <div class="icons">
+              <a href="#!">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#!">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#!">
+                <i class="fab fa-snapchat-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="copyright">&copy; Copyright 2022</div>
         </div>
-
-        <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <br>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-            <br>
-
-            <label for="psw"><b>Password</b></label>
-            <br>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-            <br>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-            <br>
-
-            <button type="submit" onclick="window.location.href=h;">Login</button>
-            <br>
-            
-        </div>
-
-        <!-- <div class="container">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </div> -->
-    </form>
-
-</body>
-
+      </section>
+    </main>
+    <script src="1.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c057664144.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,302 @@
+.sign-in {
+    font-family: "Baloo 2", cursive
+}
+
+.sign-in .pic-area {
+    height: 100vh;
+    padding-top: 35vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.3)), url("../img/sign-in-bg.jpg") center top no-repeat;
+    background-size: cover;
+    font-family: "Marck Script", cursive;
+    transition: all 0.5s ease-in-out
+}
+
+.sign-in .pic-area h1,
+.sign-in .pic-area h2,
+.sign-in .pic-area h3,
+.sign-in .pic-area label {
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525
+}
+
+.sign-in .pic-area label {
+    font-size: 2.5rem
+}
+
+.sign-in .pic-area h1 {
+    font-size: 48px
+}
+
+.sign-in .pic-area h2 {
+    font-size: 36px
+}
+
+.sign-in .pic-area h3 {
+    font-size: 24px
+}
+
+.sign-in .pic-area .pic-area-text {
+    padding: 1rem;
+    background: rgba(71, 71, 71, 0.2)
+}
+
+.sign-in .pic-area input {
+    font-family: "Baloo 2", cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #151515;
+    color: #b66f2d;
+    outline: none;
+    border: 1px solid #b66f2d
+}
+
+.sign-in .pic-area #username-display {
+    font-size: 2rem;
+    margin: 1rem;
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525
+}
+
+.sign-in .pic-area .btn-order {
+    cursor: pointer;
+    font-family: "Baloo 2", cursive;
+    text-decoration: none;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: #b66f2d;
+    border: 1px solid #151515;
+    transition: all 0.5s ease-in-out
+}
+
+.sign-in .pic-area .btn-order:hover {
+    background: #db8637
+}
+
+.sign-in .pic-area .icons {
+    font-size: 2.5rem;
+    margin-top: 2rem
+}
+
+.sign-in .pic-area .icons a {
+    color: #151515;
+    outline: none;
+    text-decoration: none;
+    margin: 0.5rem;
+    transition: all 0.5s ease-in-out
+}
+
+.sign-in .pic-area .icons a:hover {
+    color: #b66f2d
+}
+
+.sign-in .pic-area .copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: "Baloo 2", cursive;
+    color: white
+}
+
+.sign-up {
+    font-family: "Baloo 2", cursive
+}
+
+.sign-up .pic-area {
+    height: 100vh;
+    padding-top: 25vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.3)), url("../img/sign-up-bg.jpg") center top no-repeat;
+    background-size: cover;
+    font-family: "Marck Script", cursive;
+    transition: all 0.5s ease-in-out
+}
+
+.sign-up .pic-area h1,
+.sign-up .pic-area h2,
+.sign-up .pic-area h3,
+.sign-up .pic-area label {
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525
+}
+
+.sign-up .pic-area label {
+    font-size: 2rem
+}
+
+.sign-up .pic-area #login-box {
+    margin: 0 20%
+}
+
+.sign-up .pic-area h1 {
+    font-size: 48px
+}
+
+.sign-up .pic-area h2 {
+    font-size: 36px
+}
+
+.sign-up .pic-area h3 {
+    font-size: 24px
+}
+
+.sign-up .pic-area .pic-area-text {
+    padding: 1rem;
+    background: rgba(71, 71, 71, 0.2)
+}
+
+.sign-up .pic-area input {
+    font-family: "Baloo 2", cursive;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0.5rem;
+    background-color: #151515;
+    color: #b66f2d;
+    outline: none;
+    border: 1px solid #b66f2d
+}
+
+.sign-up .pic-area #username-display {
+    font-size: 2rem;
+    margin: 1rem;
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525
+}
+
+.sign-up .pic-area .btn-order {
+    cursor: pointer;
+    font-family: "Baloo 2", cursive;
+    text-decoration: none;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: #b66f2d;
+    border: 1px solid #151515;
+    transition: all 0.5s ease-in-out
+}
+
+.sign-up .pic-area .btn-order:hover {
+    background: #db8637
+}
+
+.sign-up .pic-area .icons {
+    font-size: 2.5rem;
+    margin-top: 2rem
+}
+
+.sign-up .pic-area .icons a {
+    color: #151515;
+    outline: none;
+    text-decoration: none;
+    margin: 0.5rem;
+    transition: all 0.5s ease-in-out
+}
+
+.sign-up .pic-area .icons a:hover {
+    color: #b66f2d
+}
+
+.sign-up .pic-area .copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: "Baloo 2", cursive;
+    color: white
+}
+.sign-in {
+    font-family: "Baloo 2", cursive;
+}
+
+.sign-in .pic-area {
+    height: 100vh;
+    padding-top: 35vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.3)), url("../img/sign-in-bg.jpg") center top no-repeat;
+    background-size: cover;
+    font-family: "Marck Script", cursive;
+}
+
+.sign-in .pic-area h1,
+.sign-in .pic-area h2,
+.sign-in .pic-area h3,
+.sign-in .pic-area label {
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+}
+
+.sign-in .pic-area label {
+    font-size: 2.5rem;
+}
+
+.sign-in .pic-area h1 {
+    font-size: 48px;
+}
+
+.sign-in .pic-area h2 {
+    font-size: 36px;
+}
+
+.sign-in .pic-area h3 {
+    font-size: 24px;
+}
+
+.sign-in .pic-area .pic-area-text {
+    padding: 1rem;
+    background: rgba(71, 71, 71, 0.2);
+}
+
+.sign-in .pic-area input {
+    font-family: "Baloo 2", cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    outline: none;
+    border: 1px solid primary-color;
+}
+
+.sign-in .pic-area #username-display {
+    font-size: 2rem;
+    margin: 1rem;
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+}
+
+.sign-in .pic-area .btn-order {
+    cursor: pointer;
+    font-family: "Baloo 2", cursive;
+    text-decoration: none;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: primary-color;
+    border: 1px solid black-color;
+}
+
+.sign-in .pic-area .btn-order:hover {
+    background: hover-color;
+}
+
+.sign-in .pic-area .icons {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.sign-in .pic-area .icons a {
+    color: black-color;
+    outline: none;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+.sign-in .pic-area .icons a:hover {
+    color: primary-color;
+}

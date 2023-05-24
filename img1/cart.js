@@ -6,12 +6,17 @@ const cart = document.querySelector(".cart");
 const cartOpenBtn = document.querySelector(".cart__openBtn");
 const cartCloseBtn = document.querySelector(".cart__closeBtn");
 const cartOverlay = document.querySelector(".cart-overlay");
+const plaeodder = document.querySelector(".placeodder");
 const clearcart=document.getElementById(".ccart");
 
 cartOpenBtn.addEventListener("click",function(){
   cart.classList.add("showcart");
   cartOverlay.classList.add("transparentBcg");
   html.classList.add("no-scroll");
+
+})
+plaeodder.addEventListener("click",function(){
+  window.location.href='index.html';
 
 })
 cartCloseBtn.addEventListener("click", function () 

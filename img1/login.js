@@ -7,7 +7,7 @@ const emailIn = document.querySelector("#emailid");
 const usernameOut = document.querySelector("#username-display");
 const usernameOutNavBar = document.querySelector(".sign-in");
 const signUpNavBar = document.querySelector(".sign-up");
-// const slashNavBar = document.querySelector("#slash");
+const slashNavBar = document.querySelector("#slash");
 const passwordIn = document.querySelector("#pswrd");
 const loginForm = document.querySelector("#login-form");
 

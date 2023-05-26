@@ -14,9 +14,9 @@
             var urls = ['home-1-slider-image-1.jpg', 'home-1-slider-image-2.jpg', 'home-1-slider-image-3.jpg'];
 
             var cout = 1;
-            $('#head1').css('background-image', 'url("' + urls[0] + '")');
+            $('hedmain').css('background-image', 'url("' + urls[0] + '")');
             setInterval(function () {
-                $('#head1').css('background-image', 'url("' + urls[cout] + '")');
+                $('.hedmain').css('background-image', 'url("' + urls[cout] + '")');
                 cout == urls.length - 1 ? cout = 0 : cout++;
             }, 5000);
 
@@ -38,19 +38,22 @@
                 <li><a href="#">Contect Us</a></li>
                 <li class="menu-nav__item">
                     <a href="login.html" class="sign-in menu-nav__link active">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                      Sign In
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Sign In
                     </a>
                     <span class="menu-nav__link" id="slash">/</span>
-              <a href="signup.html" class="sign-up menu-nav__link">
-                Sign Up
-              </a>
+                    <a href="signup.html" class="sign-up menu-nav__link">
+                        Sign Up
+                    </a>
                 </li>
                 <li><a href="#" class="fa fa-search"></a></li>
                 <!-- <li><a href="#" class="fa fa-cart-plus"></a></li> -->
             </ul>
         </nav>
     </header>
+    <div id="hedmain" class="hedmain">
+
+    </div>
     <div class="head" id="head1">
         <img id="ii1" src="h1-slider-img-1.png" style="padding-top: 180px;margin-left: 65%;">
         <h1>COFFEE MASTERS</h1>
@@ -124,6 +127,8 @@
                 Neque, delectus reprehenderit?</p>
         </div>
         <div class="body3">
+        </div>
+        <div class="body3-1">
             <img src="h1-single-img-1-250x226.png" alt="" style="padding: 200px;">
 
         </div>
@@ -196,18 +201,20 @@
             </div>
         </div>
     </div>
-    <div class="body7" style="background-image: url('new-new-h1-bacground-img-3.jpg');">
-        <h1 style="text-align: center;margin-top: 70px;">Our Partners</h1>
-        <p style="text-align: center;"><img src="title-separator.png"></p>
-        <div class="flex-container">
-            <div class="flex-b7" id="b7-1"><img src="clients-img-1.png" alt=""></div>
-            <div class="flex-b7" id="b7-2"><img src="clients-img-2.png" alt=""></div>
-            <div class="flex-b7" id="b7-3"><img src="clients-img-3.png" alt=""></div>
-            <div class="flex-b7" id="b7-4"><img src="clients-img-4-hover.png" alt=""></div>
-            <!-- <div class="flex-b7" id="b7-5"><img src="clients-img-5.png" alt=""></div> -->
-            <!-- <div class="flex-b7"><img src="clients-img-6.png" alt=""></div> -->
-        </div>
+    <div class="body7">
+
     </div>
+    <h1 style="text-align: center;margin-top: 70px;">Our Partners</h1>
+    <p style="text-align: center;"><img src="title-separator.png"></p>
+    <div class="flex-container">
+        <div class="flex-b7" id="b7-1"><img src="clients-img-1.png" alt=""></div>
+        <div class="flex-b7" id="b7-2"><img src="clients-img-2.png" alt=""></div>
+        <div class="flex-b7" id="b7-3"><img src="clients-img-3.png" alt=""></div>
+        <div class="flex-b7" id="b7-4"><img src="clients-img-4.png" alt=""></div>
+        <!-- <div class="flex-b7" id="b7-5"><img src="clients-img-5.png" alt=""></div> -->
+        <!-- <div class="flex-b7"><img src="clients-img-6.png" alt=""></div> -->
+    </div>
+
     <footer>
         <img src="logo-footer-sidearea.png" alt="" style="padding-top: 120px; width: 20%;">
         <p style="padding-top: 40px;">CAFE BEATS OWNERSHIP HAS A STRONG VISION OF BECOMING<br>

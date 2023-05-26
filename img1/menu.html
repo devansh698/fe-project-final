@@ -7,96 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <title>Document</title>
+    <link rel="stylesheet" href="home.css">
     <style>
-        .navbar {
-            position: fixed;
-            width: 100%;
-            background-color: black;
-            opacity: 0.4;
-        }
-
-        .nav1 {
-            /* position: fixed; */
-            width: 100%;
-            background-color: black;
-        }
-
-        .nav1 li {
-            display: inline;
-            color: white;
-            padding: 20px;
-            font-size: larger;
-            text-align: center;
-
-        }
-
-        .nav1 a {
-            color: white;
-            font-style: normal;
-            text-decoration: none;
-        }
-
-        .nav1 a:hover {
-            color: white;
-            text-decoration: underline;
-            /* font-style: italic; */
-        }
-
-        .navbar li {
-            display: inline;
-            color: white;
-            padding: 20px;
-            font-size: larger;
-            text-align: center;
-
-        }
-
-        .navbar a {
-            color: white;
-            font-style: normal;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            color: white;
-            text-decoration: underline;
-            /* font-style: italic; */
-        }
-
         .b1 {
-            background-image: url(home-1-slider-image-2.jpg);
-            width: 100%;
-            height: 400px;
+            background-image: url(menu-background.jpeg);
+            background-position: 50% center;
+            position: absolute;
+            background-attachment: fixed;
+            width: 98%;
+            height: 100%;
+            background-repeat: initial;
+            z-index: -2;
         }
 
-        button {
-            font-size: x-large;
-            color: aliceblue;
-            background: none;
-            border: 4px solid black;
-            margin: 30px;
-            border-radius: 4px;
+        #text {
+            background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5)) 50% center / cover fixed;
+            /* z-index: -33; */
+            height: 100%;
+            width: 100%;
+
         }
+
+
 
         button:active {
             color: red;
         }
 
         .btn {
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.286);
+            /* opacity: 0.2; */
+            text-align: center;
+            margin-top: 10%;
+            margin-bottom: 3%;
+        }
+
+        button {
+            font-size: larger;
+            color: aliceblue;
+            background: none;
+            border: 3px solid white;
+            margin: 20px;
+            text-align: center;
+            border-radius: 55px;
         }
 
         .img2 {
-            width: 100%;
+            width: 70%;
+            margin-left: 15%;
+            background-color: none;
             height: 50%;
         }
+        
 
         .i1 {
             height: 120px;
             width: 120px;
-            /* float: right; */
-            padding-top: 150px;
-            padding-left: 60%;
+            float: right;
+            display: inline-flex;
+            height: 120px;
+
+            padding-top: 15%;
+            padding-right: 15%
         }
 
         /* #myBtn {
@@ -118,10 +90,16 @@
         #myBtn:hover {
             background-color: #555;
         } */
+        #d1 {
+            background-color: rgba(255, 158, 9, 0.5);
+            z-index: 111;
+        }
+
+        
     </style>
 </head>
 
-<body>
+<body onload="show()">
     <header>
         <nav class="nav">
             <img src="logo-light.png" alt="" width="144px" height="76px" style="display: inline; padding: 20px;">
@@ -135,13 +113,13 @@
                 <li><a href="#">Contect Us</a></li>
                 <li class="menu-nav__item">
                     <a href="login.html" class="sign-in menu-nav__link active">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                      Sign In
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Sign In
                     </a>
                     <span class="menu-nav__link" id="slash">/</span>
-              <a href="signup.html" class="sign-up menu-nav__link">
-                Sign Up
-              </a>
+                    <a href="signup.html" class="sign-up menu-nav__link">
+                        Sign Up
+                    </a>
                 </li>
                 <li><a href="#" class="fa fa-search"></a></li>
                 <!-- <li><a href="#" class="fa fa-cart-plus"></a></li> -->
@@ -150,26 +128,36 @@
     </header>
     <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
     <div class="b1">
-        <img src="h1-slider-img-1.png" class="i1">
-        <h1 style="color: aliceblue; text-align: center;padding-left: 29%; font-size: 60px;">COFFEE MASTERS</h1>
-        <!-- <img src="https://www.cafecoffeeday.com/sites/default/files/history-text_0_0.png" alt="" width="18%"> -->
+        <h1 style="opacity: 0;">x</h1>
+
     </div>
-    <div class="btn">
-        <button type="button" onclick="show()" id="btnID" style="margin-left: 70px;">
-            HOT CLASICS
-        </button>
-        <button type="button" onclick="show2()" id="btnID2">
-            ALL-TIME CHILLERS
-        </button>
-        <button type="button" onclick="show3()" id="btnID3">
-            ALL-DAY DELIGHTS
-        </button>
-        <button type="button" onclick="show5()" id="btnID5">
-            REFRESHRS
-        </button>
-        <button type="button" onclick="show4()" id="btnID4">
-            SWEET TOOTH
-        </button>
+    <div>
+        <div class="text">
+            <h1 id="nmm"
+                style="color: aliceblue; text-align: left; font-size: 130px;  margin: 0px; padding: 10%;display: inline-flex; padding-bottom: 0px;">
+                MENU</h1>
+            <img src="h1-slider-img-1.png" class="i1">
+            <h1 style="color: aliceblue; text-align: center;padding-left: 29%; font-size: 60px;">COFFEE MASTERS</h1>
+            <!-- <h1 style="color: aliceblue; text-align: right; font-size: 100px; margin-left: 20%;">MENU</h1> -->
+
+        </div>
+        <div class="btn">
+            <button type="button" onclick="show()" ondblclick="hideall()" id="btnID" style="margin-left: 70px;">
+                HOT CLASICS
+            </button>
+            <button type="button" onclick="show2()" ondblclick="hideall()" id="btnID2">
+                ALL-TIME CHILLERS
+            </button>
+            <button type="button" onclick="show3()" ondblclick="hideall()" id="btnID3">
+                ALL-DAY DELIGHTS
+            </button>
+            <button type="button" onclick="show5()" ondblclick="hideall()" id="btnID5">
+                REFRESHRS
+            </button>
+            <button type="button" onclick="show4()" ondblclick="hideall()" id="btnID4">
+                SWEET TOOTH
+            </button>
+        </div>
     </div>
     <div id="d1">
         <img id="image" class="img2" src="m3.jpg" style="display: none;">
@@ -196,9 +184,19 @@
                 .style.display = "none";
             document.getElementById('image')
                 .style.display = "block";
+            document.getElementById('btnID')
+                .style.backgroundColor = "";
+            document.getElementById('btnID2')
+                .style.backgroundColor = "";
+            document.getElementById('btnID3')
+                .style.backgroundColor = "";
+            document.getElementById('btnID4')
+                .style.backgroundColor = "";
+            document.getElementById('btnID5')
+                .style.backgroundColor = "";
+            document.getElementById('btnID')
+                .style.backgroundColor = "red";
         }
-    </script>
-    <script>
         function show2() {
             document.getElementById('image')
                 .style.display = "none";
@@ -212,9 +210,20 @@
                 .style.display = "none";
             document.getElementById('image2')
                 .style.display = "block";
+
+            document.getElementById('btnID')
+                .style.backgroundColor = "";
+            document.getElementById('btnID2')
+                .style.backgroundColor = "";
+            document.getElementById('btnID3')
+                .style.backgroundColor = "";
+            document.getElementById('btnID4')
+                .style.backgroundColor = "";
+            document.getElementById('btnID5')
+                .style.backgroundColor = "";
+            document.getElementById('btnID2')
+                .style.backgroundColor = "red";
         }
-    </script>
-    <script>
         function show3() {
             document.getElementById('image')
                 .style.display = "none";
@@ -228,9 +237,20 @@
                 .style.display = "none";
             document.getElementById('image3')
                 .style.display = "block";
+
+            document.getElementById('btnID')
+                .style.backgroundColor = "";
+            document.getElementById('btnID2')
+                .style.backgroundColor = "";
+            document.getElementById('btnID3')
+                .style.backgroundColor = "";
+            document.getElementById('btnID4')
+                .style.backgroundColor = "";
+            document.getElementById('btnID5')
+                .style.backgroundColor = "";
+            document.getElementById('btnID3')
+                .style.backgroundColor = "red";
         }
-    </script>
-    <script>
         function show4() {
             document.getElementById('image')
                 .style.display = "none";
@@ -244,10 +264,32 @@
                 .style.display = "none";
             document.getElementById('image4')
                 .style.display = "block";
+
+            document.getElementById('btnID')
+                .style.backgroundColor = "";
+            document.getElementById('btnID2')
+                .style.backgroundColor = "";
+            document.getElementById('btnID3')
+                .style.backgroundColor = "";
+            document.getElementById('btnID4')
+                .style.backgroundColor = "";
+            document.getElementById('btnID5')
+                .style.backgroundColor = "";
+            document.getElementById('btnID4')
+                .style.backgroundColor = "red";
         }
-    </script>
-    <script>
         function show5() {
+            document.getElementById('btnID')
+                .style.backgroundColor = "";
+            document.getElementById('btnID2')
+                .style.backgroundColor = "";
+            document.getElementById('btnID3')
+                .style.backgroundColor = "";
+            document.getElementById('btnID4')
+                .style.backgroundColor = "";
+            document.getElementById('btnID5')
+                .style.backgroundColor = "red";
+
             document.getElementById('image')
                 .style.display = "none";
             document.getElementById('image2')
@@ -259,8 +301,64 @@
             document.getElementById('image5')
                 .style.display = "block";
         }
+        function hideall() {
+            document.getElementById('image')
+                .style.display = "none";
+            document.getElementById('image2')
+                .style.display = "none";
+            document.getElementById('image3')
+                .style.display = "none";
+            document.getElementById('image4')
+                .style.display = "none";
+            document.getElementById('image5')
+                .style.display = "none";
+
+            document.getElementById('btnID')
+                .style.backgroundColor = "";
+            document.getElementById('btnID2')
+                .style.backgroundColor = "";
+            document.getElementById('btnID3')
+                .style.backgroundColor = "";
+            document.getElementById('btnID4')
+                .style.backgroundColor = "";
+            document.getElementById('btnID5')
+                .style.backgroundColor = "";
+
+
+        }
     </script>
     </div>
+    <footer>
+        <img src="logo-footer-sidearea.png" alt="" style="padding-top: 120px; width: 20%;">
+        <p style="padding-top: 40px;">CAFE BEATS OWNERSHIP HAS A STRONG VISION OF BECOMING<br>
+            A MOST LOVED LEISURE CAFE BRAND THAT SPREADS<br>
+            DELICIOUS PRODUCTS AND SERVICE SMILES ACROSS THE GLOBE</p>
+        <br><br><br><br>
+        <h2>STORES</h2>
+        <h4>Delhi</h4>
+        <h4>Chandigrah</h4>
+        <h4>Mumbai</h4>
+        <h2 style="margin-top: 60px;">NEWS AS FRESH AS OUR COFFEE</h2>
+        <form action="">
+            <input type="email" placeholder="Email"
+                style="width: 15%;height: 30px; border: 2px solid white;border-radius: 3px; background: none; margin-bottom: 150px;">
+        </form>
+        <nav class="nav1">
+            <img src="logo-light.png" alt="" width="144px" height="76px" style="display: inline; padding: 20px;">
+            <ul style="display: inline; padding-top: 40px; padding-right: 50px; float: left;">
+                <!-- <li><img src="logo-light.png" alt="" width="144px" height="76px"></li> -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About-Us</a></li>
+                <li><a href="#">Contect Us</a></li>
+                <li style="padding-left: 80px;"><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+
+            </ul>
+        </nav>
+
+
+    </footer>
     <script src="login.js"></script>
     <script src="cart.js"></script>
 </body>

@@ -75,29 +75,32 @@ body {
   }
   .bill{
     height: 50%;
-    width: 40%;
+    width: 55%;
     box-sizing: content-box;
     border: 2px solid black;
-    margin-left: 15%;
+    margin-left: 8%;
     padding: 2%;
     font-size: large;
     font-weight: 100;
+    display: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   .pdetails{
+    display: none;
     height: 50%;
-    width: 40%;
+    width: 55%;
     box-sizing: content-box;
     border: 2px solid black;
-    margin-left: 15%;
+    margin-left: 8%;
     padding: 2%;
   }
   .payment{
+    display: none;
     height: 50%;
-    width: 40%;
+    width: 55%;
     box-sizing: content-box;
     border: 2px solid black;
-    margin-left: 15%;
+    margin-left: 8%;
     padding: 2%;
   }
   /* .bill h3{
@@ -119,13 +122,76 @@ body {
     margin-left: 53%;
   } */
   .tble{
-    width: 60%;
+    width: 70%;
     text-align: -webkit-right;
     margin-left: 15%;
     background-color: beige;
   }
 .btns1{
     font-size: large;
-    border: 0px solid white;
+    border: 0px solid rgba(0, 0, 0, 0);
+    font-weight: bold;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.249);
+    width: 70%;
+    padding: 11px;
+    color: #fff;
+    
+    
+    
   }
   
+  .btns{
+    text-align: center;
+    display: inline-flex;
+    padding: 28px;
+    height: 50px;
+    width: 70%;
+
+  }
+  .promo input{
+    border: 0% solid rgba(0, 0, 0, 0.249);
+    margin: 0%;
+    padding: 0%;
+    border-right-width: 0px;
+    font-size: medium;
+    border-left-width: 0px;
+    /* width: 30px; */
+    padding: 13px;
+  }
+  .promo button{
+    border: 0% solid rgba(0, 0, 0, 0.249);
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+    font-size: medium;
+    border-left-width: 0px;
+    /* width: 30px; */
+    padding: 13px;
+    
+  }
+  .promo{
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.249);
+    display: inline-flex;
+    font-size: large;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 5%;
+
+  }
+  .promo button:hover{
+    color: green;
+  }
+  .body1{
+    width: 50%;
+    display: inline-block;
+  }
+  .body2{
+    width: 49%;
+    display: inline-block;
+  }
+  .tblitms tr{
+    display: none;
+  }

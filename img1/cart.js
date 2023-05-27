@@ -1058,3 +1058,25 @@ function initializeItem12() {
     Storage.removeAmount("item12");
   });
 }
+// function itms(){
+//   if(item1Counter>1){
+//     itm1();
+//   }
+//   if(item2Counter>1){
+//     itm1();
+//   }
+//   if(itemCounter>1){
+//     itm1();
+//   }
+
+// }
+// function itm1() {
+//   document.getElementById("itm1").style.display = "block";
+// }
+// function itm2() {
+//   document.getElementById("itm2").style.display = "block";
+// }
+// function itm3() {
+//   document.getElementById("itm3").style.display = "block";
+// }
+

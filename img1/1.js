@@ -518,6 +518,9 @@ function initializeItem1() {
     item1Counter = 0;
     Storage.removeAmount("item1");
   });
+  if(item1Counter>1){
+    itm1();
+  }
 }
 
 /**
@@ -572,6 +575,9 @@ function initializeItem2() {
     item2Counter = 0;
     Storage.removeAmount("item2");
   });
+  if(item2Counter>1){
+    itm2();
+  }
 }
 
 /**
@@ -626,6 +632,9 @@ function initializeItem3() {
     item3Counter = 0;
     Storage.removeAmount("item3");
   });
+  if(item3Counter>1){
+    itm3();
+  }
 }
 
 /**

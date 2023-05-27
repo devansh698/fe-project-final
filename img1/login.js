@@ -72,7 +72,7 @@ let currUser = Storage.getUsername();
 if (currUser) {
   usernameOutNavBar.innerHTML = '<i class="fas fa-user"></i> ' + currUser;
   signUpNavBar.innerHTML = "";
-  // slashNavBar.innerHTML = "";
+  slashNavBar.innerHTML = "";
   if (loginForm) {
     loginForm.innerHTML = "";
     usernameOut.innerHTML =
@@ -89,7 +89,9 @@ if (loginBtn) {
   } else {
     loginBtn.innerHTML = "Sign Out";
     loginBtn.addEventListener("click", () => {
-      localStorage.removeItem("username");
+      localStorage.clear();
+      let totalAmount=0;
+  localStorage.setItem("total", totalAmount.toString());
       location.reload();
     });
     loginForm.addEventListener("submit", (event) => {

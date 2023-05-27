@@ -315,6 +315,11 @@
 #b7-5:hover {
     background-image: url(clients-img-5-hover.png);
 } */
+.checkout{
+    font-size: large;
+    background-color: black;
+    color: white;
+}
 
 footer {
     background-image: url(footer-top-img-1.jpg);

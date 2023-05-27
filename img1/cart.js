@@ -6,8 +6,9 @@ const cart = document.querySelector(".cart");
 const cartOpenBtn = document.querySelector(".cart__openBtn");
 const cartCloseBtn = document.querySelector(".cart__closeBtn");
 const cartOverlay = document.querySelector(".cart-overlay");
-const plaeodder = document.querySelector(".placeodder");
-const clearcart=document.getElementById(".ccart");
+const plaeodder = document.querySelector(".checkout");
+const checkout=document.getElementById(".checkout");
+
 
 cartOpenBtn.addEventListener("click",function(){
   cart.classList.add("showcart");
@@ -16,7 +17,7 @@ cartOpenBtn.addEventListener("click",function(){
 
 })
 plaeodder.addEventListener("click",function(){
-  window.location.href='index.html';
+  window.location.href='checkout.html';
 
 })
 cartCloseBtn.addEventListener("click", function () 
@@ -28,6 +29,7 @@ cartCloseBtn.addEventListener("click", function ()
 
 // Shopping Cart Adding Items to Cart
 const total = document.querySelector(".total");
+const amountnm = document.querySelector(".amount");
 // const total = document.getElementById(".total");
 let totalAmount;
 
@@ -47,15 +49,21 @@ function updateTotal(moneyChange) {
   totalAmount += moneyChange;
   localStorage.setItem("total", totalAmount.toString());
   if (totalAmount > 1) {
-    total.innerHTML = `<span class="span-primary">Total Amount:</span> Rs. ${totalAmount.toFixed(
-      2
-    )}`;
+    total.innerHTML = `<span class="span-primary">Total Amount:</span> Rs. ${totalAmount}`;
+    // amountnm.innerHTML = `<span class="span-primary">Total Amount:</span> Rs. ${totalAmount}`;
   } else {
     total.innerHTML = `<br>
       <br>
       Your Shopping Cart is empty. <br>
         Add items to cart by hovering over / tapping on the images of products
     on the Menu page.`;
+  }
+  // document.getElementById('amount').innerHTML=`<span class="span-primary"> your Total Amount is</span> Rs. ${totalAmount}`;
+  if (totalAmount < 1){
+    document.getElementById("checkout").style.display="none";
+  }
+  else{
+    document.getElementById("checkout").style.display="inline-flex";
   }
 }
 

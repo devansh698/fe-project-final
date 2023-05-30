@@ -21,6 +21,10 @@
             }, 5000);
 
         });
+        function scrolltoabout() {
+                var elem = document.getElementById("abt");
+                elem.scrollIntoView();
+        }
     </script>
 </head>
 
@@ -34,7 +38,7 @@
                 <li><a href="menu.html">Our Menu</a></li>
                 <li><a href="oderonline.html"> Oder Online</a></li>
                 <li><a href="locations.html">Locations</a></li>
-                <li><a href="#">About-Us</a></li>
+                <li><a onclick="scrolltoabout()">About-Us</a></li>
                 <li><a href="#">Contect Us</a></li>
                 <li class="menu-nav__item">
                     <a href="login.html" class="sign-in menu-nav__link active">
@@ -215,7 +219,7 @@
         <!-- <div class="flex-b7"><img src="clients-img-6.png" alt=""></div> -->
     </div>
 
-    <footer>
+    <footer id="abt">
         <img src="logo-footer-sidearea.png" alt="" style="padding-top: 120px; width: 20%;">
         <p style="padding-top: 40px;">CAFE BEATS OWNERSHIP HAS A STRONG VISION OF BECOMING<br>
             A MOST LOVED LEISURE CAFE BRAND THAT SPREADS<br>
